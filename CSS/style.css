@@ -9,12 +9,12 @@ body {
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  position: relative;
+  /* position: relative; */
 }
 /* 380 보다 커지면 메시지 송부 */
 
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -23,11 +23,12 @@ body {
   justify-content: center;
   align-items: center;
   background-color: salmon;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
-    opacity: 1;
+    /* opacity: 1; */
+    display: none;
   }
 }
